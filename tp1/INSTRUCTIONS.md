@@ -12,7 +12,7 @@ Vous partez en voyage à Séoul et vous voulez savoir combien coûtera votre caf
 - construire des phrases avec les template literals ;
 - identifier le type d'une valeur avec `typeof` et repérer les conversions automatiques de JavaScript.
 
-**Durée estimée :** 1h30 à 2h pour le socle, plus 10 à 15 min pour l'exercice papier. Le bonus est pour celles et ceux qui ont fini en avance.
+Le **bonus** est pour celles et ceux qui ont fini en avance.
 
 ## Règles du module
 
@@ -48,7 +48,7 @@ Tout votre code JavaScript ira dans `script.js`. Tous les résultats s'affichero
 
 ---
 
-## Étape 0 : Mise en place (Socle)
+## Étape 0 : Mise en place
 
 ### Consigne
 
@@ -96,7 +96,7 @@ Corrigez la faute, rechargez, et vérifiez que le message revient.
 
 ---
 
-## Étape A : Convertisseur de devises (Socle)
+## Étape A : Convertisseur de devises
 
 ### Consigne
 
@@ -134,7 +134,7 @@ console.log(`Direction ${city} !`);
 
 ---
 
-## Étape B : Convertisseur de températures (Socle)
+## Étape B : Convertisseur de températures
 
 ### Consigne
 
@@ -182,7 +182,7 @@ Vous avez sans doute écrit `temperatureFahrenheit - 32 * 5 / 9`. JavaScript cal
 
 ---
 
-## Étape C : Fiche de présentation (Socle)
+## Étape C : Fiche de présentation
 
 ### Consigne
 
@@ -231,7 +231,7 @@ Avec `+`, JavaScript colle les morceaux tels quels. Si vous voyez `Léa,j'ai`, i
 
 ---
 
-## Étape D : Chasse aux types (Socle)
+## Étape D : Chasse aux types
 
 ### Consigne
 
