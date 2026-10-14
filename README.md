@@ -9,6 +9,7 @@ Chaque TP est un mini-projet indépendant, rangé dans son propre dossier. Vous 
 | [`tp1/`](tp1/INSTRUCTIONS.md) | Variables, types, opérations, template literals, `typeof`, `undefined` / `null`            |
 | [`tp2/`](tp2/INSTRUCTIONS.md) | Comparaisons, `===` / `!==`, opérateurs logiques `&&` `\|\|` `!`, `if` / `else if` / `else` |
 | [`tp3/`](tp3/INSTRUCTIONS.md) | Boucles (`for`, `while`, `for...of`), tableaux, objets, tableaux d'objets                  |
+| [`tp4/`](tp4/INSTRUCTIONS.md) | Fonctions, paramètres et `return`, portée, callbacks (`forEach`, `map`, `filter`, `find`)  |
 
 ## Comment travailler
 
