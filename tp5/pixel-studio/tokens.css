@@ -1,0 +1,33 @@
+/* Pixel Studio — foundations bundled with TP5. */
+:root {
+  color-scheme: dark;
+  --bg: #0d1220;
+  --surface: #151d2d;
+  --surface-raised: #1c2639;
+  --ink: #eef1f8;
+  --muted: #aab6cd;
+  --line: #303d54;
+  --gold: #f2cc8f;
+  --tech: #83daca;
+  --media: #e5a6cb;
+  --strategy: #edc08b;
+  --culture: #bcb0f3;
+  --font-pixel: 'Press Start 2P', monospace;
+  --font-text: 'Space Grotesk', system-ui, sans-serif;
+  --font-data: 'IBM Plex Mono', ui-monospace, monospace;
+}
+body.dark-theme { color-scheme: dark; }
+body.light-theme {
+  color-scheme: light;
+  --bg: #edf0f5;
+  --surface: #ffffff;
+  --surface-raised: #e6ebf2;
+  --ink: #182338;
+  --muted: #536078;
+  --line: #c5cedc;
+  --gold: #855711;
+  --tech: #16685e;
+  --media: #923767;
+  --strategy: #87541b;
+  --culture: #6550a4;
+}

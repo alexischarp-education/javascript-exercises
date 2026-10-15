@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP5 - MMI Quest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <p class="header-kicker">Collection de cartes</p>
+      <h1 id="guild-name"></h1>
+      <p id="card-count"></p>
+      <p id="guild-stats"></p>
+      <p id="guild-message"></p>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2 class="section-title">Carte de test</h2>
+        <article class="card" id="test-card">
+          <img class="card-avatar" id="test-avatar" alt="" />
+          <h3 class="card-name" id="test-name"></h3>
+          <p class="card-title" id="test-title"></p>
+          <p class="card-quote" id="test-quote"></p>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">La guilde</h2>
+        <div class="card-grid" id="card-grid"></div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Laboratoire</h2>
+        <p class="lab-label">#test-text</p>
+        <p class="lab-box" id="test-text"></p>
+        <p class="lab-label">#test-html</p>
+        <p class="lab-box" id="test-html"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

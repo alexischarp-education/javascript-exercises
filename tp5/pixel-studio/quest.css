@@ -1,0 +1,31 @@
+/* MMI Quest layout and atmosphere. No JavaScript or exercise answers. */
+.header {
+  position: relative; isolation: isolate; min-height: 380px;
+  padding: 76px max(24px, calc((100% - 1120px) / 2)) 48px;
+  background: #10182b; color: #eef1f8; border-bottom: 1px solid #35415c;
+}
+.header::before {
+  content: ''; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(90deg, #0d1425ed, #0d142552 55%, #0d142510), url('assets/academy-night.png') center 55% / cover;
+}
+.header-kicker { margin: 0 0 28px; color: #a9dcd3; font: 10px/1.8 var(--font-pixel); letter-spacing: .5px; }
+#guild-name { margin: 0 0 16px; min-height: 1.2em; max-width: 680px; font-size: clamp(36px, 6vw, 64px); font-weight: 600; letter-spacing: -2px; line-height: 1.15; }
+#card-count, #guild-stats, #guild-message { margin: 6px 0 0; max-width: 540px; }
+#card-count { color: #e0e7f4; }
+#guild-stats { color: #c0cce0; font: 12px/1.8 var(--font-data); }
+#guild-message { color: #f2cc8f; font-size: 14px; }
+main { max-width: 1168px; margin: auto; padding: 12px 24px 80px; }
+.section { margin-top: 40px; }
+.section-title { display: flex; align-items: center; gap: 20px; margin: 0 0 24px; font-size: 22px; font-weight: 500; letter-spacing: -.5px; }
+.section-title::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+#test-card { max-width: 352px; }
+#test-card .card-quote { min-height: 0; }
+#test-card :is(.card-name,.card-title,.card-quote):empty::before { content: '???'; color: var(--muted); }
+#test-card .card-avatar:not([src]) { background: var(--surface-raised); border: 1px dashed var(--muted); }
+@media (max-width: 600px) {
+  .header { min-height: 320px; padding: 48px 24px 32px; }
+  .header::before { background-position: center, 60% center; }
+  .header-kicker { font-size: 8px; }
+  .card-grid { gap: 20px; }
+  .section { margin-top: 32px; }
+}

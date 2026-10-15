@@ -10,6 +10,7 @@ Chaque TP est un mini-projet indépendant, rangé dans son propre dossier. Vous 
 | [`tp2/`](tp2/INSTRUCTIONS.md) | Comparaisons, `===` / `!==`, opérateurs logiques `&&` `\|\|` `!`, `if` / `else if` / `else` |
 | [`tp3/`](tp3/INSTRUCTIONS.md) | Boucles (`for`, `while`, `for...of`), tableaux, objets, tableaux d'objets                  |
 | [`tp4/`](tp4/INSTRUCTIONS.md) | Fonctions, paramètres et `return`, portée, callbacks (`forEach`, `map`, `filter`, `find`)  |
+| [`tp5/`](tp5/INSTRUCTIONS.md) | DOM sans événements : `querySelector`, `textContent` / `innerHTML`, `classList`, génération HTML |
 
 ## Comment travailler
 
