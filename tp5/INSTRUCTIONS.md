@@ -50,8 +50,8 @@ Le fichier contient le tableau `professors` : huit objets de cette forme.
   name: 'La Tisseuse',
   title: 'Architecte du Web',
   domain: 'tech',
-  stats: { creativity: 80, rigor: 85, patience: 95 },
-  quote: "Un site accessible, c'est un site pour tout le monde.",
+  stats: { creativity: 70, rigor: 90, patience: 90 },
+  quote: 'Attention aux contrastes !',
   avatar: 'avatars/tisseuse.svg',
 }
 ```
@@ -268,7 +268,7 @@ Trouvez le membre dont la créativité est la plus haute (une boucle avec un max
 
 ### Bonus 2 : La patience de la guilde
 
-Additionnez la patience de tous les membres avec un accumulateur, puis affichez le total dans `#guild-stats`, sous le compteur : `Patience cumulée : …`. Les huit professeurs totalisent 663, plus la vôtre.
+Additionnez la patience de tous les membres avec un accumulateur, puis affichez le total dans `#guild-stats`, sous le compteur : `Patience cumulée : …`. Les huit professeurs totalisent 698, plus la vôtre.
 
 ### Bonus 3 : L'humeur de la guilde
 
