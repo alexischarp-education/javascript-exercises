@@ -11,6 +11,7 @@ Chaque TP est un mini-projet indépendant, rangé dans son propre dossier. Vous 
 | [`tp3/`](tp3/INSTRUCTIONS.md) | Boucles (`for`, `while`, `for...of`), tableaux, objets, tableaux d'objets                  |
 | [`tp4/`](tp4/INSTRUCTIONS.md) | Fonctions, paramètres et `return`, portée, callbacks (`forEach`, `map`, `filter`, `find`)  |
 | [`tp5/`](tp5/INSTRUCTIONS.md) | DOM sans événements : `querySelector`, `textContent` / `innerHTML`, `classList`, génération HTML |
+| [`tp6/`](tp6/INSTRUCTIONS.md) | Événements : `addEventListener`, `click`, `mouseenter`, `input`, `change` |
 
 ## Comment travailler
 

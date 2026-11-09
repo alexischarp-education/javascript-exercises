@@ -1,0 +1,16 @@
+/* Pixel Studio — controls bundled with TP6. Presentation only, no behaviour. */
+.is-hidden { display: none; }
+.card { cursor: pointer; }
+#hover-panel { margin-bottom: 24px; }
+
+.toolbar { display: flex; flex-wrap: wrap; align-items: end; gap: 16px 24px; }
+.field { display: grid; gap: 6px; }
+.field-label { color: var(--muted); font: 12px/1.5 var(--font-data); }
+input[type="text"], select {
+  min-width: 220px; padding: 10px 14px;
+  color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 4px;
+}
+input[type="text"]:hover, select:hover { border-color: var(--muted); }
+input[type="text"]:focus, select:focus { border-color: var(--tech); }
+input[type="text"]::placeholder { color: var(--muted); }

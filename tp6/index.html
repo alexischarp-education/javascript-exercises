@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP6 - MMI Quest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <p class="header-kicker">Collection de cartes</p>
+      <h1 id="guild-name">MMI Quest</h1>
+      <p id="card-count">Cartes affichées : 8 sur 8</p>
+      <p id="guild-stats">Équipe (0/3) : aucun membre</p>
+      <p id="guild-message">Total : créativité 0 · rigueur 0 · patience 0</p>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2 class="section-title">Filtres</h2>
+        <div class="toolbar">
+          <div class="field">
+            <label class="field-label" for="search-input">Rechercher un nom</label>
+            <input id="search-input" type="text" placeholder="Ex : Stratège" autocomplete="off" />
+          </div>
+          <div class="field">
+            <label class="field-label" for="domain-filter">Domaine</label>
+            <select id="domain-filter">
+              <option value="all">Tous les domaines</option>
+              <option value="tech">Tech</option>
+              <option value="media">Média</option>
+              <option value="strategy">Stratégie</option>
+              <option value="culture">Culture</option>
+            </select>
+          </div>
+          <button id="clear-button" type="button">Vider l'équipe</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">La guilde</h2>
+        <p class="lab-box" id="hover-panel">Survolez une carte pour voir ce que son recrutement changerait.</p>
+        <div class="card-grid" id="card-grid">
+            <article class="card tech" data-creativity="70" data-rigor="90" data-patience="90">
+              <img class="card-avatar" src="avatars/tisseuse.svg" alt="" />
+              <h3 class="card-name">La Tisseuse</h3>
+              <p class="card-title">Architecte du Web</p>
+              <p class="card-quote">Attention aux contrastes !</p>
+              <div class="stat">
+                <span class="stat-label">Créativité</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 70%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Rigueur</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 90%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Patience</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 90%"></div></div>
+              </div>
+            </article>
+            <article class="card media" data-creativity="90" data-rigor="90" data-patience="70">
+              <img class="card-avatar" src="avatars/maitresse-du-temps.svg" alt="" />
+              <h3 class="card-name">La Maîtresse du Temps</h3>
+              <p class="card-title">Chronomancienne du Montage</p>
+              <p class="card-quote">Chaque seconde compte, sur la timeline comme à l&#39;emploi du temps.</p>
+              <div class="stat">
+                <span class="stat-label">Créativité</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 90%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Rigueur</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 90%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Patience</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 70%"></div></div>
+              </div>
+            </article>
+            <article class="card strategy" data-creativity="65" data-rigor="95" data-patience="90">
+              <img class="card-avatar" src="avatars/stratege.svg" alt="" />
+              <h3 class="card-name">La Stratège</h3>
+              <p class="card-title">Générale des Campagnes</p>
+              <p class="card-quote">Un bon produit, c&#39;est d&#39;abord un bon plan.</p>
+              <div class="stat">
+                <span class="stat-label">Créativité</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 65%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Rigueur</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 95%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Patience</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 90%"></div></div>
+              </div>
+            </article>
+            <article class="card culture" data-creativity="60" data-rigor="95" data-patience="95">
+              <img class="card-avatar" src="avatars/mathemagicienne.svg" alt="" />
+              <h3 class="card-name">La Mathémagicienne</h3>
+              <p class="card-title">Enchanteresse des Nombres</p>
+              <p class="card-quote">Les mots sont des fenêtres, les murs sont durs (un truc comme ça).</p>
+              <div class="stat">
+                <span class="stat-label">Créativité</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 60%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Rigueur</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 95%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Patience</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 95%"></div></div>
+              </div>
+            </article>
+            <article class="card tech" data-creativity="60" data-rigor="97" data-patience="85">
+              <img class="card-avatar" src="avatars/root.svg" alt="" />
+              <h3 class="card-name">Le Root</h3>
+              <p class="card-title">Gardien des Serveurs</p>
+              <p class="card-quote">Un grand pouvoir implique de grandes responsabilités. #sudo</p>
+              <div class="stat">
+                <span class="stat-label">Créativité</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 60%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Rigueur</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 97%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Patience</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 85%"></div></div>
+              </div>
+            </article>
+            <article class="card media" data-creativity="98" data-rigor="70" data-patience="85">
+              <img class="card-avatar" src="avatars/illustrateur.svg" alt="" />
+              <h3 class="card-name">L&#39;Illustrateur</h3>
+              <p class="card-title">Enlumineur Numérique</p>
+              <p class="card-quote">Mais que fait la police ?</p>
+              <div class="stat">
+                <span class="stat-label">Créativité</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 98%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Rigueur</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 70%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Patience</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 85%"></div></div>
+              </div>
+            </article>
+            <article class="card strategy" data-creativity="75" data-rigor="80" data-patience="98">
+              <img class="card-avatar" src="avatars/eclaireuse.svg" alt="" />
+              <h3 class="card-name">L&#39;Éclaireuse</h3>
+              <p class="card-title">Accompagnatrice des âmes</p>
+              <p class="card-quote">La lumière nous guide, tout comme LinkedIn.</p>
+              <div class="stat">
+                <span class="stat-label">Créativité</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 75%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Rigueur</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 80%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Patience</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 98%"></div></div>
+              </div>
+            </article>
+            <article class="card culture" data-creativity="80" data-rigor="90" data-patience="85">
+              <img class="card-avatar" src="avatars/traducteur.svg" alt="" />
+              <h3 class="card-name">Le Traducteur</h3>
+              <p class="card-title">Barde des Langues</p>
+              <p class="card-quote">For sure!</p>
+              <div class="stat">
+                <span class="stat-label">Créativité</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 80%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Rigueur</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 90%"></div></div>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Patience</span>
+                <div class="stat-bar"><div class="stat-fill" style="width: 85%"></div></div>
+              </div>
+            </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
