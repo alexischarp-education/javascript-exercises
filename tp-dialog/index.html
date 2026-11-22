@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Modale - Nuits Courtes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="site-logo">Nuits Courtes</p>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="#program">Programme</a></li>
+          <li><a href="#volunteers">Devenir bénévole</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Nuits Courtes</h1>
+        <p class="hero-dates">Festival de courts-métrages étudiants · 12, 13 et 14 mars 2027</p>
+      </section>
+
+      <section id="program" class="section">
+        <h2>Programme</h2>
+        <ul class="session-list">
+          <li class="session-card">
+            <p class="session-date">Vendredi 12 mars · 20 h</p>
+            <h3>Premiers pas</h3>
+            <button type="button" class="button">Ajouter à mon agenda</button>
+          </li>
+          <li class="session-card">
+            <p class="session-date">Samedi 13 mars · 20 h</p>
+            <h3>Nuit de l'animation</h3>
+            <button type="button" class="button">Ajouter à mon agenda</button>
+          </li>
+          <li class="session-card">
+            <p class="session-date">Dimanche 14 mars · 18 h</p>
+            <h3>Palmarès</h3>
+            <button type="button" class="button">Ajouter à mon agenda</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="volunteers" class="section">
+        <h2>Devenir bénévole</h2>
+        <p>Accueil, billetterie, régie : une soirée suffit, et vous voyez tous les films.</p>
+        <button type="button" class="button" id="volunteer-button">Proposer mon aide</button>
+        <p id="volunteer-status" class="status" role="status"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2027 Nuits Courtes, association étudiante (fictive).</p>
+      <ul class="footer-links">
+        <li><a href="mailto:contact@nuits-courtes.example">Nous écrire</a></li>
+        <li><button type="button" class="link-button" id="legal-button">Mentions légales</button></li>
+      </ul>
+    </footer>
+  </body>
+</html>

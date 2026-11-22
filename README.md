@@ -4,14 +4,22 @@ Travaux pratiques du module « Introduction au JavaScript » (BUT MMI, 1re anné
 
 Chaque TP est un mini-projet indépendant, rangé dans son propre dossier. Vous pouvez faire n'importe quel TP sans avoir fait les précédents.
 
-| Dossier                       | Thème                                                                                      |
-| ----------------------------- | ------------------------------------------------------------------------------------------ |
-| [`tp1/`](tp1/INSTRUCTIONS.md) | Variables, types, opérations, template literals, `typeof`, `undefined` / `null`            |
-| [`tp2/`](tp2/INSTRUCTIONS.md) | Comparaisons, `===` / `!==`, opérateurs logiques `&&` `\|\|` `!`, `if` / `else if` / `else` |
-| [`tp3/`](tp3/INSTRUCTIONS.md) | Boucles (`for`, `while`, `for...of`), tableaux, objets, tableaux d'objets                  |
-| [`tp4/`](tp4/INSTRUCTIONS.md) | Fonctions, paramètres et `return`, portée, callbacks (`forEach`, `map`, `filter`, `find`)  |
+| Dossier                       | Thème                                                                                            |
+| ----------------------------- | ------------------------------------------------------------------------------------------------ |
+| [`tp1/`](tp1/INSTRUCTIONS.md) | Variables, types, opérations, template literals, `typeof`, `undefined` / `null`                  |
+| [`tp2/`](tp2/INSTRUCTIONS.md) | Comparaisons, `===` / `!==`, opérateurs logiques `&&` `\|\|` `!`, `if` / `else if` / `else`      |
+| [`tp3/`](tp3/INSTRUCTIONS.md) | Boucles (`for`, `while`, `for...of`), tableaux, objets, tableaux d'objets                        |
+| [`tp4/`](tp4/INSTRUCTIONS.md) | Fonctions, paramètres et `return`, portée, callbacks (`forEach`, `map`, `filter`, `find`)        |
 | [`tp5/`](tp5/INSTRUCTIONS.md) | DOM sans événements : `querySelector`, `textContent` / `innerHTML`, `classList`, génération HTML |
-| [`tp6/`](tp6/INSTRUCTIONS.md) | Événements : `addEventListener`, `click`, `mouseenter`, `input`, `change` |
+| [`tp6/`](tp6/INSTRUCTIONS.md) | Événements : `addEventListener`, `click`, `mouseenter`, `input`, `change`                        |
+
+## TPs liés aux projets
+
+Ces TPs ne font pas partie de la progression numérotée : ils accompagnent une SAÉ et préparent une partie précise du projet.
+
+| Dossier                                   | SAÉ                               | Thème                                                                                                 |
+| ----------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| [`tp-dialog/`](tp-dialog/INSTRUCTIONS.md) | SAÉ 1.05 « Produire un site web » | Modale accessible avec `<dialog>` : `showModal()`, `close()`, gestion du focus, critères RGAA et WCAG |
 
 ## Comment travailler
 

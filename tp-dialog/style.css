@@ -1,0 +1,321 @@
+/* TP Modale – Nuits Courtes
+   Provided stylesheet. The dialog styles at the end are ready for the <dialog> you write at step 1. */
+
+/* ---------------------------------------------------------------------------
+   Base
+   --------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #15132b;
+  color: #f5f1e8;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+a {
+  color: #ffcf5c;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 3px solid #ffcf5c;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+/* ---------------------------------------------------------------------------
+   Header
+   --------------------------------------------------------------------------- */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+}
+
+.site-logo {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------------------------------------------------------------------------
+   Main content
+   --------------------------------------------------------------------------- */
+main {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+.hero {
+  padding: 3rem 0 2rem;
+}
+
+.hero h1 {
+  margin: 0.25rem 0;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  color: #ffcf5c;
+}
+
+.hero-dates {
+  margin: 0 0 1rem;
+  font-weight: 700;
+}
+
+.section {
+  padding: 2rem 0;
+  border-top: 1px solid #3b3766;
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+}
+
+.session-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.session-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.25rem;
+  border: 1px solid #3b3766;
+  border-radius: 12px;
+  background: #221f3f;
+}
+
+.session-card h3 {
+  margin: 0 0 1.25rem;
+}
+
+.session-card .button {
+  margin-top: auto;
+}
+
+.session-date {
+  margin: 0 0 0.25rem;
+  color: #ffcf5c;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.status {
+  min-height: 1.6em;
+  color: #ffcf5c;
+  font-weight: 700;
+}
+
+/* ---------------------------------------------------------------------------
+   Buttons
+   --------------------------------------------------------------------------- */
+.button {
+  padding: 0.75rem 1.25rem;
+  border: 2px solid #ffcf5c;
+  border-radius: 999px;
+  background: #ffcf5c;
+  color: #15132b;
+  font-weight: 700;
+}
+
+.button:hover {
+  border-color: #ffe08f;
+  background: #ffe08f;
+}
+
+/* A button that looks like a link (footer). */
+.link-button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #ffcf5c;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.link-button:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* ---------------------------------------------------------------------------
+   Footer
+   --------------------------------------------------------------------------- */
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2.5rem;
+  border-top: 1px solid #3b3766;
+  color: #cfc9de;
+  font-size: 1rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------------------------------------------------------------------------
+   Dialog
+   Expected structure: dialog.dialog > .dialog-header (h2 + .dialog-close) + .dialog-body
+   --------------------------------------------------------------------------- */
+.dialog {
+  width: min(42rem, calc(100% - 2rem));
+  max-height: calc(100% - 4rem);
+  padding: 0; /* no padding on the dialog itself: the inner blocks have it */
+  overflow-y: auto;
+  border: 0;
+  border-radius: 12px;
+  background: #fffdf7;
+  color: #1d1a33;
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 0.5);
+}
+
+/* Inside the dialog, the background is light: links and focus outline need darker colors. */
+.dialog a {
+  color: #4a2fb8;
+}
+
+.dialog :focus-visible {
+  outline-color: #5b3fd1;
+}
+
+.dialog::backdrop {
+  background: rgb(10 8 28 / 0.8);
+  backdrop-filter: blur(3px);
+}
+
+.dialog-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e4dfd2;
+  background: #fffdf7;
+}
+
+.dialog-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.dialog-close {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 2px solid #1d1a33;
+  border-radius: 50%;
+  background: transparent;
+  color: #1d1a33;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.dialog-close:hover {
+  background: #f1ecdf;
+}
+
+.dialog-body {
+  padding: 1.5rem;
+}
+
+.dialog-body h3 {
+  margin: 1.5rem 0 0.25rem;
+  font-size: 1.125rem;
+}
+
+.dialog-body h3:first-child {
+  margin-top: 0;
+}
+
+.dialog-body p {
+  margin: 0 0 0.75rem;
+}
+
+/* Small dialog with action buttons (step 8). */
+.dialog-small {
+  width: min(28rem, calc(100% - 2rem));
+}
+
+.dialog-small h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.button-secondary {
+  border-color: #1d1a33;
+  background: transparent;
+  color: #1d1a33;
+}
+
+.button-secondary:hover {
+  border-color: #1d1a33;
+  background: #f1ecdf;
+}
